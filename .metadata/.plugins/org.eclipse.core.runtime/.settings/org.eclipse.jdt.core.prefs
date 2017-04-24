@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Program Files/Java/jre1.8.0_91/lib/rt.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=C\:/Users/Oksana/.p2/pool/plugins/org.junit_4.12.0.v201504281640
+org.eclipse.jdt.core.classpathVariable.M2_REPO=C\:/Users/Oksana/.m2/repository
+org.eclipse.jdt.core.classpathVariable.SELENIUM_HOME=C\:/Program Files/selenium-2.53.1
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
+org.eclipse.jdt.core.compiler.compliance=1.8
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.source=1.8
+org.eclipse.jdt.core.userLibrary.selenium=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="false" version\="2">\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/apache-mime4j-0.6.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/bsh-2.0b4.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/cglib-nodep-2.1_3.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/commons-codec-1.10.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/commons-exec-1.3.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/commons-io-2.4.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/commons-logging-1.2.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/gson-2.3.1.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/guava-19.0.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/hamcrest-core-1.3.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/hamcrest-library-1.3.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/httpclient-4.5.1.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/httpcore-4.4.3.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/httpmime-4.5.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/jcommander-1.48.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/jna-4.1.0.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/jna-platform-4.1.0.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/junit-4.12.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/netty-3.5.7.Final.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/libs/phantomjsdriver-1.2.1.jar"/>\r\n\t<archive path\="C\:/Program Files/selenium-2.53.1/selenium-java-2.53.1.jar"/>\r\n</userlibrary>\r\n

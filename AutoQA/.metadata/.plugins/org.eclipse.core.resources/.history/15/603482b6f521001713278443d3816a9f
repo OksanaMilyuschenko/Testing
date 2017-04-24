@@ -1,0 +1,26 @@
+package autoPlaysight;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import org.junit.*;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized.Parameters;
+import org.junit.runners.Parameterized;
+
+public class SignInTest {
+	private String username;
+	private String password;
+	
+	SignInTest(String username, String password) {
+		this.username = username;
+		this.password = password;
+	}
+	
+	@Test
+	public void testSignInBehaviour() {
+		
+	}
+}

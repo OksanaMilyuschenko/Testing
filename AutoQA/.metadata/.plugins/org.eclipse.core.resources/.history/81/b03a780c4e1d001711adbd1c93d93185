@@ -1,0 +1,129 @@
+package autoPlaysight;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+import static org.junit.Assert.assertTrue;
+
+public class FirstTestCase {
+	@Test
+public void testCompare(){
+
+//	  System.setProperty("webdriver.chrome.driver","C:/Program Files/selenium-2.53.1/chromedriver.exe");
+//	  WebDriver driver = new ChromeDriver();
+//    driver.get("http://demoqa.com/droppable/");
+//    WebElement dragel =driver.findElement(By.cssSelector("#draggableview"));
+//    Actions action = new Actions(driver);
+//    action.dragAndDropBy(dragel,150,0).build().perform();
+//    String newText = driver.findElement(By.cssSelector("#droppableview p")).getText();
+//    assertEquals("Dropped!", newText);
+
+		System.setProperty("webdriver.chrome.driver","C:/Program Files/selenium-2.53.1/chromedriver.exe");
+    	WebDriver driver = new ChromeDriver();
+    	driver.get("http://demoqa.com/slider/");
+    	WebElement dragel =driver.findElement(By.xpath("//*[@id="slider-range-max"]/span));
+    	Actions move = new Actions(driver);
+    	Action action = (Action)move.dragAndDropBy(dragel, 30, 0).build();
+    	((Actions)action).perform();
+//        
+//		System.setProperty("webdriver.chrome.driver","C:/Program Files/selenium-2.53.1/chromedriver.exe");
+//     	WebDriver driver = new ChromeDriver();
+//     	driver.get("http://demoqa.com/selectable/");
+//     	WebElement dragel =driver.findElement(By.cssSelector("#selectable li:first-child"));
+//     	Actions action = new Actions(driver);
+//        action.dragAndDropBy(dragel,0,190).build().perform();
+//		
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+// #2
+//	driver.findElement(By.cssSelector("#email")).sendKeys("sunrayy.08@mail.ru");
+//	driver.findElement(By.cssSelector("#pass")).sendKeys("datex52xxxx");
+// 	driver.findElement(By.cssSelector("#loginbutton")).click();
+// 	WebElement email = driver.findElement(By.id("email"));
+//	Actions action = new Actions(driver);
+//	action.moveToElement(email).perform();
+//	String rlink = driver.findElement(By.cssSelector("a[href='/r.php']")).getText();
+//	assertTrue(rlink.length()!=0);
+//	
+	
+	
+}
+
+public static void main(String[] args) throws InterruptedException {
+	
+	
+	
+      
+       	System.setProperty("webdriver.chrome.driver","C:/Program Files/selenium-2.53.1/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+	    driver.get("https://www.facebook.com");
+		driver.findElement(By.cssSelector("#email")).sendKeys("sunrayy.08@mail.ru");
+		driver.findElement(By.cssSelector("#pass")).sendKeys("datex52xxxx");
+     	driver.findElement(By.cssSelector("#loginbutton")).click();
+     	WebElement email = driver.findElement(By.id("email"));
+		Actions action = new Actions(driver);
+		action.moveToElement(email).perform();
+		String rlink = driver.findElement(By.cssSelector("a[href='/r.php']")).getText();
+		assertEquals("Sign Up", rlink);
+		//assertTrue(rlink.length()!=0);
+		
+		
+		
+		
+//		driver.get("https://www.facebook.com");
+//		driver.findElement(By.cssSelector("#email")).sendKeys("sunrayy.08@mail.ru");
+//		driver.findElement(By.cssSelector("#pass")).sendKeys("datex52xxxx");
+//		driver.findElement(By.cssSelector("#loginbutton")).click();
+//		String username = driver.findElement(By.cssSelector("#userNav ul li:first-child")).getAttribute("data-nav-item-id");
+//		assertEquals("Should be equal", "1832105721", username);
+//		
+		
+//	WebElement tab = driver.findElement(By.id("ui-id-3"));
+//		tab.click();
+//		WebElement bb = driver.findElement(By.id("tabs-3")).findElement(By.tagName("b"));
+//		System.out.println(bb.getText());
+//		
+		
+//		WebElement aboutus = driver.findElement(By.id("menu-item-158"));
+//		aboutus.click();
+//		WebElement a1 =driver.findElement(By.id("post-156")); 
+//		WebElement a2 = a1.findElement(By.tagName("header")).findElement( By.tagName("h1"));
+//		String a3= a2.getText();
+//		System.out.println(a3);
+	
+		
+		//String element2 = driver.findElement(By.className("widget-title")).getText();
+		//System.out.println(element2);
+		
+	    driver.quit();
+		
+    }
+//System.setProperty("webdriver.chrome.driver","C:/Program Files/selenium-2.53.1/chromedriver.exe");
+//WebDriver driver = new ChromeDriver();
+//driver.get("http://demoqa.com/");
+//WebElement aboutus = driver.findElement(By.id("menu-item-158"));
+//aboutus.click();
+//WebElement a1 =driver.findElement(By.id("post-156")); 
+//WebElement a2 = a1.findElement(By.tagName("header")).findElement( By.tagName("h1"));
+//String a3= a2.getText();
+//System.out.println(a3);
+//assertEquals("Should be equal", "About us", a3);
+}

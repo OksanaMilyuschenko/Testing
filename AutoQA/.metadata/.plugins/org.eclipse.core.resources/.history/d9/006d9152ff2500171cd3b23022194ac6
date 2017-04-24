@@ -1,0 +1,62 @@
+package autoPlaysight;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class ProductPage {
+
+	 public WebDriver driver;
+	
+	 public ProductPage(WebDriver driver) {
+	 this.driver = driver;
+	 }
+	 
+	 By productsSize = By.cssSelector("#customSelect_7256903198 > div.csDropdown"); 
+	 By productsColors = By.cssSelector(" #item > div.offerParams > div.paramBlock.colorBlock > div.colors"); 
+	 By BuyButton  = By.cssSelector("#AF_BuyButton"); 
+	 By select  = By.cssSelector("#item > div.offerParams > div.paramBlock.sizeBlock > div.select"); 
+	
+	 public  String changeSize(int userSize){
+		 
+		  driver.findElement(select).click();
+		  List <WebElement> size =driver.findElements(productsSize);
+		  
+		  System.out.println(size.get(0));
+		  System.out.println("size is " +size.size());
+		  String sizeValues = null;
+		  
+		  for(int i = 0; i <size.size(); i++) {
+		  sizeValues = size.get(i).getAttribute("data-project");
+		  System.out.println(sizeValues);
+			  }
+		 
+		  System.out.println(sizeValues);
+		  return sizeValues;
+			
+	 }
+	 
+
+	
+		  
+	 
+		
+	
+		public  ProductPage changeColor(){	
+		List <WebElement> colors =driver.findElements(productsColors);
+		colors.get(0).click();	  
+		return this;
+	
+	}
+
+       public  ProductPage submit(){
+	   driver.findElement(BuyButton).click();
+	   return this;
+	
+	}
+
+
+}
+

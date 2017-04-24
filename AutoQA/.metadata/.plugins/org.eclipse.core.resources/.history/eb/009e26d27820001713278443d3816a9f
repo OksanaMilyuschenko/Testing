@@ -1,0 +1,45 @@
+package autoPlaysight;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class test {
+
+
+
+	public static void main(String[] args) throws IOException {
+		try(FileWriter writer = new FileWriter("C:\\SomeDir\\notes3.txt", false))
+        {
+           // запись всей строки
+            String text = "ћама мыла раму, раму мыла мама";
+            writer.write(text);
+            
+        }
+        catch(IOException ex){
+             
+            System.out.println(ex.getMessage());
+        } 
+		   
+	    
+		System.setProperty("webdriver.chrome.driver","C:/Program Files/selenium-2.53.1/chromedriver.exe");
+		  WebDriver driver = new ChromeDriver(); 
+		  driver.get("http://www.uploadedit.com/_to-upload-documents-onto-internet-PLAIN-TEXT-TXT-hosting.htm");
+		  WebElement uploadElement = driver.findElement(By.cssSelector("input[name='my_field']"));
+		  uploadElement.sendKeys("C:\\test.txt");
+		  uploadElement.submit();
+		  driver.findElement(By.cssSelector("a[target='_blank'] font b")).click();
+		  Actions action = new Actions(driver);
+	      action.sendKeys(Keys.CONTROL + "TAB");
+		  String text1 = driver.findElement(By.cssSelector("body")).getText();
+		  System.out.println(text1);
+
+	}
+
+}

@@ -1,0 +1,45 @@
+package autoPlaysight;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+
+public class MainTest  {
+	
+	
+
+
+	@Test
+	public void startWebDriver() {
+		 
+		  
+		  
+		System.setProperty("webdriver.chrome.driver","C:/Program Files/selenium-2.53.1/chromedriver.exe"); 
+	       WebDriver driver = new ChromeDriver();
+	       driver.get("http://musthave.ua/product/2860/#cart");
+	       
+//	       ProductPage product = new ProductPage(driver);
+//	       product.changeSize(40);
+//	 
+	       BusketPage test = new BusketPage(driver);
+	       test.getAmount();
+	    
+
+	   }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+

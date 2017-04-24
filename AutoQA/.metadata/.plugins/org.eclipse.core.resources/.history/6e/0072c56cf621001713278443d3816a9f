@@ -1,0 +1,41 @@
+package autoPlaysight;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import org.junit.*;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized.Parameters;
+import org.junit.runners.Parameterized;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+@RunWith(value = Parameterized.class)
+public class SignInTest {
+	private String username;
+	private String password;
+	
+	 @Parameters
+	    public static Collection testData() {
+	        return Arrays.asList(
+	            new Object[][] {
+	                {"user1", "!@#@$^$@##$%"},
+	                {"user2", "123123ab"},
+	                {"user3", "sg2345"},
+	        }
+	    );
+	 }
+	
+	 SignInTest(String username, String password) {
+		this.username = username;
+		this.password = password;
+	 }
+	
+	@Test
+	public void testSignInBehaviour() {
+		
+	}
+}

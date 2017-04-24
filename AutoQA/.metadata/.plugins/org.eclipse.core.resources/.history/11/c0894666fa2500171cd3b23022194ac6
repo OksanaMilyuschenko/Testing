@@ -1,0 +1,49 @@
+package autoPlaysight;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class SearchPage {
+	
+ private  WebDriver driver;
+ public SearchPage(WebDriver driver) {
+ this.driver = driver;
+ }
+ 
+ By search = By.cssSelector("div.searchForm > form input");
+ By productsList = By.cssSelector("div.search_container > div > div.products_list.productsList"); 
+	
+ 
+ 
+     public SearchPage typeSearchInput (String text){
+     driver.findElement(search).sendKeys(text);
+	 
+		return this;
+		 
+	 }
+    
+	 
+	 public WebElement getElementIndex(int index){
+     List <WebElement> list=driver.findElements(productsList);
+     int size = list.size();
+     if (index>size) {
+         throw new IllegalStateException("There are no such product.Try to enter number from 0 to" + size);
+     }
+      WebElement element = list.get(index);
+		 
+		return element;
+	 }
+
+	 
+     public SearchPage openItemByIndex(int index){
+     List <WebElement> list=driver.findElements(productsList);	
+     list.get(index).click();
+    	
+	 return this;
+    	
+    }
+
+}

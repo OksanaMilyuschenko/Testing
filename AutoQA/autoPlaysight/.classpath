@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/cglib-nodep-3.2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/commons-lang3-3.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/cssparser-0.9.21.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/guava-21.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/htmlunit-2.24.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/htmlunit-core-js-2.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/htmlunit-driver-2.24.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/javax.servlet-api-3.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/jetty-io-9.4.1.v20170120.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/jetty-util-9.4.1.v20170120.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/neko-htmlunit-2.24.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/phantomjsdriver-1.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/websocket-api-9.2.20.v20161216.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/websocket-client-9.2.20.v20161216.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/websocket-common-9.2.20.v20161216.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Oksana/Desktop/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/selenium-2.53.1/selenium-java-2.53.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

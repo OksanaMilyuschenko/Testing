@@ -1,0 +1,61 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class ContactsManager {
+
+	List<Map> contacts = new ArrayList();
+	
+	public  void showMenu(){
+		System.out.println("(1)Add contact (2)Show all contacts");
+	}
+	
+	 void addContact(){
+		 Scanner in = new Scanner(System.in);
+		 System.out.println("name   ");
+	     String name =in.nextLine();
+		 System.out.println("phone   ");
+	     String phone =in.nextLine();
+	     Map<String, String> hashMap = new HashMap<String, String>();
+	     hashMap.put("name",name );
+	     hashMap.put("phone",phone);
+	     contacts.add(hashMap);
+	     
+	 }
+	
+	 void showContact(){
+		 for (Map<String,String> element : this.contacts) { 
+			 System.out.println("name is  "+element.get("name")+"phone is " +element.get("phone"));
+        }
+	 }
+	 
+	
+	public void run(){
+		this.showMenu();
+		
+	}
+	 public void handleMenu(){
+		 Scanner in = new Scanner(System.in);
+			int index =in.nextInt();
+		//  in.close(); 
+		switch(index) {
+		  case 1: System.out.println("Add contact");
+		  break;
+		  case 2: System.out.println("Show all contacts");
+		}
+	 }
+	 public static void main (String[]args){
+		 
+		 ContactsManager test = new ContactsManager();
+		 test.addContact();
+		 test.showContact();
+	
+		 
+		 
+		 
+		 
+	 }
+
+}
